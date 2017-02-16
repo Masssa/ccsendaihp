@@ -1,94 +1,253 @@
+
+a:link { color: dimgray; }
+a:visited { color: dimgray; }
+a:hover { color: dimgray; }
+a:active { color: dimgray; }
+
 .header
 {
 	width:100%;
-	height:200px;
-	background-color:red;
-	padding:10px 10px;
+	height:170px;
+	padding:0px 0px;
 	z-index:0;
-	border:1px solid black;
+	/*border:1px dotted black;*/
+	overflow: hidden;
+	background-color:#FAFAFA;
+	color:#3E3D3D;
 }
 
 .header-top
 {
 	width:100%;
-	height:100px;
-	background-color:green;
-	margin-bottom:10px;
-	border:1px solid black;
+	margin-bottom:0px;
+	/*border:1px dotted black;*/
 	z-index:1;
+	font-size:4vw;
+	padding-top:20px;
+	font-family:BebasNeue;
+	background-color:#FAFAFA;
+	display:inline-block;
+}
+
+
+.header-top-middle{
+	display:inline;
+	margin-left:30%;
+	background-color: #FAFAFA;
+}
+
+.header-top-right{
+	display:inline;
+	margin-left:15%;
+	background-color: #FAFAFA;
+}
+
+@media(max-width:1000px){
+	.header-top-middle{
+		margin-left:25%;
+	}
+	.header-top-right{
+		margin-left:5%;
+	}
+}
+
+.header-top-right-twitter{
+	position:relative;
+	top:5px;
+}
+.header-top-right-facebook{
+	position:relative;
+	top:5px;
+}
+.header-top-right-instagram{
+	position:relative;
+	top:5px;
+}
+
+img.hea
+
+.header-top-right a{
+	display:inline;
+	padding-top:20px;
 }
 
 .header-bottom
 {
 	width:100%;
-	height:65px;
-	background-color:blue;
+	overflow: hidden;
 	z-index:1;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:0px;
+	padding-bottom:0px;
 	text-align:center;
-	border:1px solid black;
+	/*border:1px dotted black;*/
+	font-family:BebasNeue;
+	font-size:30px;
+	background-color:#FAFAFA;
+}
+
+nav {
+	width: 100%;
+	color: #FFF;
+	background: #333;
+}
+nav.fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
 }
 
 .header-bottom-top
 {
 	width:80px;
-	background-color:orange;
 	z-index:2;
 	display:inline-block;
 	padding: 20px 30px;
-	border:1px solid black;
+	position: relative;
+	background-color:#FAFAFA;
+	color:#3E3D3D;
+	border-radius: 5px;
+}
+
+.header-bottom-top:hover{
+	top:-1px;
+	left:-1px;
+	box-shadow:1px 1px gray;
+	background-color: whitesmoke;
 }
 
 .header-bottom-team
 {
 	width:80px;
-	background-color:brown;
 	z-index:2;
 	display:inline-block;
 	padding: 20px 30px;
-	border:1px solid black;
+	position: relative;
+	background-color:#FAFAFA;
+	color:#3E3D3D;
+	border-radius: 5px;
+}
+
+.header-bottom-team:hover{
+	top:-1px;
+	left:-1px;
+	box-shadow:1px 1px gray;
+	background-color: whitesmoke;
 }
 
 .header-bottom-model
 {
 	width:80px;
-	background-color:purple;
 	z-index:2;
 	display: inline-block;
 	padding: 20px 30px;
-	border:1px solid black;
+	position: relative;
+	background-color:#FAFAFA;
+	color:#3E3D3D;
+	border-radius: 5px;
+}
+
+.header-bottom-model:hover{
+	top:-1px;
+	left:-1px;
+	box-shadow:1px 1px gray;
+	background-color: whitesmoke;
 }
 
 .main
 {
 	height:4000px;
 	width:100%;
-	background-color:#800000;
-	border:1px solid black;
+	/*border:1px dotted black;*/
 	padding:10px 10px;
+	background-color:#FAFAFA;
 }
 
 .main-top
 {
-	height:500px;
 	width:100%;
-	background-color:#800080;
-	border:1px solid black;
+	font-size:60px;
+	/*border:1px dotted black;*/
+	z-index:3;
+	margin:0px 0px;
+	padding-top:20px;
+	padding-bottom:20px;
+	overflow:hidden;
+	background-color:#FAFAFA;
+}
+
+/*topのスランドショーに関するもの*/
+.main-top-slide{
+	width:100%;
+	font-size:60px;
+	/*border:1px dotted black;*/
+	z-index:3;
+	margin:0px 0px;
+	overflow:hidden;
 }
 
 .main-middle
 {
 	height:500px;
-	width:100%;
-	background-color:#900000;
-	border:1px solid black;
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	line-height:28px;
+	/*border:1px dotted black;*/
+	z-index: 3;
+	padding-bottom:0px;
+	background-color:#FAFAFA;
 }
 
+.slogan{
+	font-size:2vw;
+	color:#3E3D3D;
+	text-align:center;
+}
+
+.main_sentence{
+	font-size:1vw;
+	color:#3E3D3D;
+}
 .main-bottom
 {
-	height:500px;
+	overflow: hidden;
 	width:100%;
-	background-color:#300070;
-	border:1px solid black;
+	height:400px;
+	border:1px dotted black;
+	text-align:center;
+	background-color:#FAFAFA;
 }
+
+.main-bottom-item1
+{
+	width:30%;
+	height:360px;
+	display:inline-block;
+	border:1px dotted black;
+}
+
+.main-bottom-item2
+{
+	width:30%;
+	height:360px;
+	display:inline-block;
+	border:1px dotted black;
+	background-color:#FAFAFA;
+}
+
+.main-bottom-item3
+{
+	width:30%;
+	height:360px;
+	display:inline-block;
+	border:1px dotted black;
+	background-color:#FAFAFA;
+}
+
+@font-face{
+	font-family: "BebasNeue";
+	src: local(BebasNeue Bold.ttf);
+}
+
+
